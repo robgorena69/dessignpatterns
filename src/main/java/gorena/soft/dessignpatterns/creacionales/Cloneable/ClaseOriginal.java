@@ -49,8 +49,8 @@ public class ClaseOriginal implements Cloneable {
     }
 
     @Override
-    public Object clone() throws CloneNotSupportedException {
-        return super.clone();
+    public ClaseOriginal clone() throws CloneNotSupportedException {
+        return (ClaseOriginal)super.clone();
     }
 
 }

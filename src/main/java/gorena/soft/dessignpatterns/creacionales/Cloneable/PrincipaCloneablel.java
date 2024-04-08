@@ -6,8 +6,8 @@ public class PrincipaCloneablel {
 
     public static void main(String[] args) throws CloneNotSupportedException {
         ClaseOriginal claseOriginal = new ClaseOriginal("Pedrito", LocalDate.of(1977, 7, 31), "Jefe");
-        ClaseOriginal claseClonada = (ClaseOriginal) claseOriginal.clone();
-        ClaseOriginal claseClonada2 = (ClaseOriginal) claseOriginal.clone();
+        ClaseOriginal claseClonada = claseOriginal.clone();
+        ClaseOriginal claseClonada2 = claseOriginal.clone();
 
         claseClonada.setFecha(LocalDate.of(2000, 7, 10));
 
