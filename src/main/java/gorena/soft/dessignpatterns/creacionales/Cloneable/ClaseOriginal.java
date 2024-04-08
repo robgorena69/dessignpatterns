@@ -48,4 +48,9 @@ public class ClaseOriginal implements Cloneable {
         return "Hola soy " + nombre + ", y tengo el  cargo=" + cargo + "]";
     }
 
+    @Override
+    public Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
+
 }
