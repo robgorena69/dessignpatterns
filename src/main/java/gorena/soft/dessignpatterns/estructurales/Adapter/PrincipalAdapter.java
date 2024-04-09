@@ -11,13 +11,13 @@ public class PrincipalAdapter {
             System.out.println("El circulo no entra");
         }
 
-        CuadradoAdapter cuadradosmall = new CuadradoAdapter(4);
-        CuadradoAdapter cuadradobig = new CuadradoAdapter(3);
-        if (hueco.quepa(cuadradosmall)){
+        CuadradoAdapter cuadradosmall = new CuadradoAdapter(new Cuadrado(4));
+        CuadradoAdapter cuadradobig = new CuadradoAdapter(new Cuadrado(30));
+        if (hueco.quepa(cuadradosmall.getCirculo())){
             System.out.println("Cuadrado small entra en el ciruclo");
         } else 
             System.out.println("Cuadrado pequeño no entra en el circulo");
-        if (!hueco.quepa(cuadradobig)){ 
+        if (!hueco.quepa(cuadradobig.getCirculo())){ 
             System.out.println("Cuadrado grande no entra en el circulo");
         } else {
             System.out.println("Cuadrado grande entra en el");

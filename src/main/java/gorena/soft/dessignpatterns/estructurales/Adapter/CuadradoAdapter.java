@@ -1,6 +1,6 @@
 package gorena.soft.dessignpatterns.estructurales.Adapter;
 
-public class CuadradoAdapter extends Circulo {
+public class CuadradoAdapter  {
 
     private Cuadrado cuadrado;
 
@@ -9,20 +9,10 @@ public class CuadradoAdapter extends Circulo {
         //TODO Auto-generated constructor stub
     }
 
- 
-    public Cuadrado getCuadrado() {
-        return cuadrado;
-    }
-
-    public void setCuadrado(Cuadrado cuadrado) {
-        
-    }
-
-    @Override
-    public double getRadio() {
+    public Circulo getCirculo() {
         double resultado;
         resultado = Math.sqrt(Math.pow(cuadrado.getLado()/2, 2)*2);
-        return resultado;
+        return new Circulo(resultado);
     }    
     
 }
